@@ -20,7 +20,7 @@ public class SampleDataUtil {
                 new Remark("Loves chocolate"),
                 getTagSet("friends")),
             new Person(new Name("Bernice Yu"), new Phone("99272758"), new Email("berniceyu@example.com"),
-                new Address("Blk 30 Lorong 3 Serangoon Gardens, #07-18"), 
+                new Address("Blk 30 Lorong 3 Serangoon Gardens, #07-18"),
                 new Remark("Meet soon."),
                 getTagSet("colleagues", "friends")),
             new Person(new Name("Charlotte Oliveiro"), new Phone("93210283"), new Email("charlotte@example.com"),
