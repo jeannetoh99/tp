@@ -7,7 +7,7 @@ title: User Guide
 ## Introduction
 
 WanderLust helps tech-savvy travellers to plan their trips in a structured and efficient manner by providing them with a holistic travel planner.
-It is optimized for CLI users so that activites and details can be added faster by typing in commands.
+It is optimized for CLI users so that travel plans, activities, accommodations and friends can be added faster by typing in commands.
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -31,6 +31,9 @@ It is optimized for CLI users so that activites and details can be added faster 
         2. [Adding an Activity (L)](#2-adding-an-activity-l)
         3. [Adding an Accommodation (L)](#3-adding-an-accommodation-l)
         4. [Adding a Friend (L)](#4-adding-a-friend-l)
+
+    <div style="page-break-after: always;"></div>
+
     * [Delete](#delete)
         1. [Deleting a Travel Plan (G)](#1-deleting-a-travel-plan-g)
         2. [Deleting an Activity (L)](#2-deleting-an-activity-l)
@@ -71,6 +74,7 @@ It is optimized for CLI users so that activites and details can be added faster 
 * [FAQ](#faq)
 
 --------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
 ## Quick Start
 
@@ -86,6 +90,7 @@ It is optimized for CLI users so that activites and details can be added faster 
 
 ![Ui](images/Ui.png)
 --------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
 ## Tutorial Guide
 
@@ -103,8 +108,9 @@ Command | Description
 `delete -friend 1` | Removes friend at index 1 in the friend list shown
 `show -activity` | Switch to the activity tab
 
-
 --------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
+
 ## Command Summary
 
 There are a total of 12 general commands.
@@ -124,6 +130,8 @@ Command | Parameters | Description
 `clear` | not applicable | Clear all data
 `exit` | not applicable | Exit the application
 `help`| not applicable | Provide a link to access Wanderlust UserGuide for help
+
+<div style="page-break-after: always;"></div>
 
 ## Directory
 
@@ -146,6 +154,8 @@ Wishlist | Travel plan
 `exit` | `exit`
 
 --------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
+
 ## Parameters
 
 The tables below show the different type of parameters each object requires.
@@ -162,6 +172,8 @@ Name of Parameter | Description | Format
 `c/COST` | Cost of the activity | {::nomarkdown}<ul><li>Should only contain positive integer not exceeding MAX_INT</li></ul>{:/}
 `d/DATE_AND_TIME` | Date and Time for the activity | {::nomarkdown}<ul><li>Format is `YYYY-MM-DD HH:MM` <br/>(24h clock)</li></ul>{:/}
 
+<div style="page-break-after: always;"></div>
+
 **Notes about Activity:**<br>
 
 * Different activities can have the same date and time within _Wanderlust_ travel plan and wishlist.
@@ -169,6 +181,8 @@ Name of Parameter | Description | Format
 * The name of an activity is case sensitive.
 * If an activity is in a travel plan, the activity date and time must be within the start and date end of the travel plan.
 * The date and time of an activity is not restricted. (Etc a user can input an insignificant date time such as `1111-11-11 00:00`).
+
+<div style="page-break-after: always;"></div>
 
 #### Accommodation Parameters
 
@@ -186,6 +200,8 @@ Name of Parameter | Description | Format
 * If an accommodation is in a travel plan, the accommodation date must be within the start and date end of the travel plan.
 * The date of an accommodation is not restricted. (Etc a user can input an insignificant date time such as `1111-11-11`).
 
+<div style="page-break-after: always;"></div>
+
 #### Friend Parameters
 
 Name of Parameter | Description | Format
@@ -197,6 +213,8 @@ Name of Parameter | Description | Format
 **Notes about Friend:**<br>
 
 * Passport is case-sensitive and regarded as the identity
+
+<div style="page-break-after: always;"></div>
 
 #### Travel Plan Parameters
 
@@ -211,6 +229,8 @@ Name of Parameters | Description | Format
 * Start date of Travel Plan can be any valid date as long as start date is before end date.
 
 --------------------------------------------------------------------------------------------------------------------
+
+<div style="page-break-after: always;"></div>
 
 ## Features
 
@@ -234,25 +254,28 @@ Name of Parameters | Description | Format
 <br/>
 </div>
 
+<div style="page-break-after: always;"></div>
+
 ## Goto
 
 The goto command is used to navigate to various directories within the travel planner. The GUI display depends on the
 state of the current directory, which is changed using the goto command. On start, the default directory of the program
 is `wishlist`.<br/>
-<br/>
 
 Directories in Wanderlust include:
 
 1. `wishlist`
-
 2. `travelplan INDEX`
 
 #### `wishlist`
 ![](images/WanderlustScreenshots/GotoWishlist.png)
 
+<div style="page-break-after: always;"></div>
+
 #### `travelplan 1`
 ![](images/WanderlustScreenshots/GotoTravelPlan.png)
 
+<div style="page-break-after: always;"></div>
 
 This allows users to easily add, delete, view and edit information within the wishlist or a specific travel plan without
 having to type their directory names in each command. This also means that **some commands can only be used locally within a
@@ -275,6 +298,7 @@ Format: `goto -wishlist`
 
 Example: `goto -wishlist`
 
+<div style="page-break-after: always;"></div>
 
 ## Add
 Refer to valid parameters for each travel plan object [here](#parameters)
@@ -297,6 +321,8 @@ Format: `add -activity n/NAME i/LEVEL_OF_IMPORTANCE l/LOCATION c/COST d/YYYY-MM-
 
 Example: `add -activity n/Universal Studios Singapore i/5 l/Sentosa c/88 d/2021-06-09 10:10`
 
+<div style="page-break-after: always;"></div>
+
 ### 3. Adding an Accommodation (L)
 Creates an accommodation that contains information about the place of stay and adds it to the travel plan in the current directory.
 
@@ -313,6 +339,8 @@ other travellers and adds it to the travel plan in the current directory.
 Format: `add -friend n/NAME m/MOBILE_NUMBER p/PASSPORT_NUMBER`
 
 Example: `add -friend n/John m/81234567 p/E1234567K`
+
+<div style="page-break-after: always;"></div>
 
 ## Delete
 
@@ -342,6 +370,8 @@ Format: `delete -accommodation INDEX`
 
 Example: `delete -accommodation 1`
 
+<div style="page-break-after: always;"></div>
+
 ### 4. Deleting a Friend (L)
 
 Deletes the friend at a given index from the travel plan in the current directory.
@@ -351,6 +381,8 @@ This command can only be used within a travel plan. Use `goto -travelplan INDEX`
 Format: `delete -friend INDEX`
 
 Example: `delete -friend 1`
+
+<div style="page-break-after: always;"></div>
 
 ## Edit
 Refer to valid parameters for each travel plan object [here](#parameters)
@@ -392,6 +424,8 @@ Format: `edit -friend INDEX n/NAME m/MOBILE_NUMBER p/PASSPORT_NUMBER`
 
 Example: `edit -friend 1 n/John m/81234567 p/E7654321K`
 
+<div style="page-break-after: always;"></div>
+
 ## Find
 
 ### How it works
@@ -420,6 +454,8 @@ Format: `find -accommodation KEYWORD [MORE_KEYWORDS]`
 
 Example: `find -accommodation hotel`
 
+<div style="page-break-after: always;"></div>
+
 ### 3. Finding friends (L)
 
 Finds friends in the travel plan in the current directory whose names contain any of the given keywords.
@@ -429,6 +465,8 @@ This command can only be used within a travel plan. Use `goto -travelplan INDEX`
 Format: `find -friend KEYWORD [MORE_KEYWORDS]`
 
 Example: `find -friend John`
+
+<div style="page-break-after: always;"></div>
 
 ## Show
 
@@ -455,6 +493,8 @@ Switches the current Ui view to show Friend tab under the travel plan object pan
 This command is only available within a travelPlan directory.
 
 Format/ Example: `show -friend`
+
+<div style="page-break-after: always;"></div>
 
 ## Sort
 
@@ -490,9 +530,11 @@ Format: `sort -activity datetime`
 
 Example: `sort -activity datetime`
 
+<div style="page-break-after: always;"></div>
+
 ### 4. Sorting by importance (L)
 
-Sorts the given travel plan object list by its importance level, starting from the highest level of importance.
+Sorts the given travel plan object list by importance level, starting from the most important.
 
 This command is only applicable to Activity list.
 
@@ -530,6 +572,8 @@ Format: `sort -OBJECT mobile`
 
 Example: `sort -friend mobile`
 
+<div style="page-break-after: always;"></div>
+
 ## Copy
 
 ### 1. Copying an Activity (L)
@@ -556,6 +600,7 @@ Format: `move ACTIVITY_INDEX TRAVELPLAN_INDEX`
 
 Example: `move 2 1`
 
+<div style="page-break-after: always;"></div>
 
 ## Clear
 
@@ -565,7 +610,6 @@ Clears all the data within _WanderLust_.
 This command ignores any trailing words after 'clear' (provided there is a space after 'clear') and will execute as usual.
 
 Format: `clear`
-
 
 ## Help
 
@@ -583,6 +627,7 @@ Format: `help`
 Format: `exit`
 
 --------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
 ## FAQ
 
